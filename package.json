@@ -1,7 +1,7 @@
 {
-  "name": "@unction/template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@unction/partition",
+  "version": "0.0.0",
+  "description": "Takes an iterable and splits into an array of two iterables based on a predicate.",
   "keywords": [
     "unction",
     "functional"
@@ -45,6 +45,9 @@
     "tap": "10.3.3"
   },
   "dependencies": {
-    "ramda": "0.24.1"
+    "@unction/append": "*",
+    "@unction/couple": "*",
+    "@unction/fresh": "*",
+    "@unction/reducevalues": "*"
   }
 }

@@ -1,17 +1,19 @@
-# @unction/tempLate
+# @unction/partition
 
 ![Tests][BADGE_TRAVIS]
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> mixed -> mixed
+> PredicateType -> IterableType -> [IterableType, IterableType]
 
-An example function.
+This function takes an IterableType and returns an array of two IterableTypes,
+the first of which contains elements which satisfy the predicate,
+the second of which contains element which do not.
 
 ``` javascript
-tempLate(1) // 1
+partition(isOdd)([1,2,3,4]) // [[1,3],[2,4]]
 ```
 
-[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/partition.svg?maxAge=2592000&style=flat-square
 [BADGE_STABILITY]: https://img.shields.io/badge/stability-strong-green.svg?maxAge=2592000&style=flat-square
-[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/partition.svg?maxAge=2592000&style=flat-square
