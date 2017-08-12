@@ -1,7 +1,7 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
 
-import pairsValues from "./source"
+import partition from "./source"
 
 const isOdd = (value) => value%2 != 0
 
