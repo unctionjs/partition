@@ -4,9 +4,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> PredicateType -> IterableType -> [IterableType, IterableType]
+> PredicateType -> FunctorType -> [FunctorType, FunctorType]
 
-This function takes an IterableType and returns an array of two IterableTypes,
+This function takes an FunctorType and returns an array of two FunctorTypes,
 the first of which contains elements which satisfy the predicate,
 the second of which contains element which do not.
 
