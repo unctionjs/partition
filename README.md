@@ -4,11 +4,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> PredicateType -> FunctorType -> [FunctorType, FunctorType]
+> PredicateFunctionType => FunctorType => [FunctorType, FunctorType]
 
-This function takes an FunctorType and returns an array of two FunctorTypes,
-the first of which contains elements which satisfy the predicate,
-the second of which contains element which do not.
+This function takes an functgor and returns an array of two of the same type of functor. the first of which contains elements which satisfy the predicate, the second of which contains element which do not.
 
 ``` javascript
 partition(isOdd)([1,2,3,4]) // [[1,3],[2,4]]

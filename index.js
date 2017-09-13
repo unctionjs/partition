@@ -3,12 +3,12 @@ import couple from "@unction/couple"
 import fresh from "@unction/fresh"
 import reduceValues from "@unction/reducevalues"
 
-export default function partition (predicate: PredicateType): Function {
+export default function partition (predicate: PredicateFunctionType): Function {
   return function partitionPredicate (functor: FunctorType): [FunctorType, FunctorType] {
-    const freshIterable = fresh(functor)
-    const initalIterablePair = [
-      freshIterable,
-      freshIterable,
+    const freshFunctor = fresh(functor)
+    const initalFunctorPair = [
+      freshFunctor,
+      freshFunctor,
     ]
 
     return reduceValues((accumulation: [FunctorType, FunctorType]): Function => (value: ValueType): [FunctorType, FunctorType] => {
@@ -20,6 +20,6 @@ export default function partition (predicate: PredicateType): Function {
       }
 
       return couple(consequent)(appendedValue(alternate))
-    })(initalIterablePair)(functor)
+    })(initalFunctorPair)(functor)
   }
 }
