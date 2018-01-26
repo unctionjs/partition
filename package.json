@@ -55,7 +55,7 @@
     "@unction/append": "4.0.0",
     "@unction/couple": "3.0.0",
     "@unction/fresh": "6.0.0",
-    "@unction/reducevalues": "6.0.0"
+    "@unction/reducevalues": "7.0.0"
   },
   "nyc": {
     "require": [
