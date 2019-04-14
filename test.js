@@ -1,15 +1,15 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
+import {test} from "tap";
 
-import partition from "./index"
+import partition from "./index";
 
-const isOdd = (value) => value%2 != 0
+const isOdd = (value) => value % 2 != 0;
 
 test(({same, end}) => {
   same(
-    partition(isOdd)([1,2,3,4]),
-    [[1,3],[2,4]]
-  )
+    partition(isOdd)([1, 2, 3, 4]),
+    [[1, 3], [2, 4]]
+  );
 
-  end()
-})
+  end();
+});

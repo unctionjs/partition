@@ -2,11 +2,13 @@ import append from "@unction/append";
 import couple from "@unction/couple";
 import fresh from "@unction/fresh";
 import reduceValues from "@unction/reducevalues";
-export default function partition(predicate) {
-  return function partitionPredicate(functor) {
+export default function partition (predicate) {
+  return function partitionPredicate (functor) {
     const freshFunctor = fresh(functor);
     const initalFunctorPair = [freshFunctor, freshFunctor];
-    return reduceValues(accumulation => value => {
+
+
+    return reduceValues((accumulation) => (value) => {
       const [consequent, alternate] = accumulation;
       const appendedValue = append(value);
 
