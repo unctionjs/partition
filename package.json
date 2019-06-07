@@ -1,6 +1,6 @@
 {
   "name": "@unction/partition",
-  "version": "9.1.0",
+  "version": "9.1.1",
   "description": "Takes an iterable and splits into an array of two iterables based on a predicate.",
   "keywords": [
     "unction",
