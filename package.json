@@ -54,8 +54,7 @@
     "@unction/append": "6.5.0",
     "@unction/couple": "4.1.0",
     "@unction/fresh": "8.5.0",
-    "@unction/reducevalues": "8.5.0",
-    "core-js": "3.0.1"
+    "@unction/reducevalues": "8.5.0"
   },
   "nyc": {
     "require": [
