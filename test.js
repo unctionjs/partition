@@ -1,7 +1,7 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 
-import partition from "./index";
+import partition from "./";
 
 const isOdd = (value) => value % 2 != 0;
 
