@@ -2,13 +2,15 @@ import append from "@unction/append";
 import couple from "@unction/couple";
 import fresh from "@unction/fresh";
 import reduceValues from "@unction/reducevalues";
-export default function partition (predicate) {
-  return function partitionPredicate (functor) {
-    const freshFunctor = fresh(functor);
-    const initalFunctorPair = [freshFunctor, freshFunctor];
+import {PredicateFunctionType} from "./types";
+import {EnumerableType} from "./types";
 
+export default function partition<A> (predicate: PredicateFunctionType<A>) {
+  return function partitionPredicate (enumerable: EnumerableType<A>): [EnumerableType<A>, EnumerableType<A>] {
+    const freshEnumerable = fresh(enumerable);
+    const initalEnumerablePair = [freshEnumerable, freshEnumerable];
 
-    return reduceValues((accumulation) => (value) => {
+    return reduceValues((accumulation: [EnumerableType<A>, EnumerableType<A>]) => (value: A) => {
       const [consequent, alternate] = accumulation;
       const appendedValue = append(value);
 
@@ -17,6 +19,6 @@ export default function partition (predicate) {
       }
 
       return couple(consequent)(appendedValue(alternate));
-    })(initalFunctorPair)(functor);
+    })(initalEnumerablePair)(enumerable);
   };
 }

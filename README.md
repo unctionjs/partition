@@ -4,9 +4,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> PredicateFunctionType => FunctorType => [FunctorType, FunctorType]
+> PredicateFunctionType<A> => EnumerableType<A> => [EnumerableType<A>, EnumerableType<A>]
 
-This function takes an functgor and returns an array of two of the same type of functor. the first of which contains elements which satisfy the predicate, the second of which contains element which do not.
+This function takes an enumerable and returns an Array of two enumerables. The first of which contains elements which satisfy the predicate, the second of which contains element which do not.
 
 ``` javascript
 partition(isOdd)([1,2,3,4]) // [[1,3],[2,4]]
