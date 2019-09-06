@@ -1,5 +1,5 @@
 
-import partition from "./index.ts";
+import partition from "./index";
 
 const isOdd = (value) => value % 2 != 0;
 
