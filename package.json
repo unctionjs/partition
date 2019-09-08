@@ -53,10 +53,10 @@
     "typescript": "3.5.1"
   },
   "dependencies": {
-    "@unction/append": "6.7.0",
-    "@unction/couple": "4.1.1",
-    "@unction/fresh": "8.6.0",
-    "@unction/reducevalues": "8.7.0"
+    "@unction/append": "6.8.0",
+    "@unction/couple": "4.1.2",
+    "@unction/fresh": "8.8.0",
+    "@unction/reducevalues": "8.8.0"
   },
   "files": [
     "index.ts",
