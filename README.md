@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> PredicateFunctionType<A> => EnumerableType<A> => [EnumerableType<A>, EnumerableType<A>]
+> PredicateFunctionType<A> => Array<A> | Set<A> | RecordType<unknown, A> | string => [Array<A> | Set<A> | RecordType<unknown, A> | string, Array<A> | Set<A> | RecordType<unknown, A> | string]
 
 This function takes an enumerable and returns an Array of two enumerables. The first of which contains elements which satisfy the predicate, the second of which contains element which do not.
 
